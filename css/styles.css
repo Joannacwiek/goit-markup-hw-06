@@ -370,11 +370,11 @@ header {
   text-align: center;
 }
 
-.clients-list {
+.clients__list {
   display: flex;
   justify-content: space-between;
 }
-.clients-list-item {
+.clients__list-item {
   width: 170px;
   height: 92px;
   border: solid 1px;
@@ -383,18 +383,27 @@ header {
   transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
 }
-.clients-list-item:hover,
-.clients-list-item:focus {
+.clients__list-item:hover,
+.clients__list-item:focus {
   border-color: var(--blue-color);
   fill: var(--blue-color);
   transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-.clients-icon-class {
+.clients__icon-class {
   fill: #afb1b8;
   margin: 16px 32px;
+}
+.clients__icon-class:hover,
+.clients__icon-class:focus,
+.clients__icon-class:active {
+  fill: var(--blue-color);
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /*FOOTER*/
@@ -475,60 +484,62 @@ header {
   fill: var(--white-color);
   transition-property: color;
   transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);}
-
-  /* Footer - SIGN UP   */
-  .footer__signup {
-    margin-left: 90px;
-    margin-top: 30px;
-    position: relative;
-  }
-  .signup__input {
-    margin-top: 20px;
-    width: 340px;
-    height: 50px;
-    background-color: transparent;
-    border: solid 1px;
-    border-radius: 4px;
-    border-color: rgba(255, 255, 255, 0.3);
-    padding-left: 16px;
-  }
-  .signup__section {
-    display: flex;
-    align-items: center;
-  }
-  .signup__button {
-    height: 50px;
-    width: 200px;
-    background-color: var(--blue-color);
-    color: rgba(255, 255, 255, 1);
-    font-size: 16px;
-    font-weight: 700;
-    line-height: 1.6;
-    letter-spacing: 0.06em;
-    position: absolute;
-    border-radius: 4px;
-    border: none;
-    align-items: baseline;
-    transition-property: transform;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    margin-left: 12px;
-    margin-top: 20px;
-    padding-left: 28px;
-  }
-  .signup__icon {
-    fill: rgba(255, 255, 255, 1);
-    margin-left: 20px;
-    position: relative;
-    top: 7px;
-  }
-  .signup__input:focus-within {
-    color: rgba(255, 255, 255, 1);
-  }
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+/* Footer - SIGN UP   */
+.footer__signup {
+  margin-left: 90px;
+  margin-top: 30px;
+  position: relative;
+}
+.signup__input {
+  margin-top: 20px;
+  width: 340px;
+  height: 50px;
+  background-color: transparent;
+  border: solid 1px;
+  border-radius: 4px;
+  border-color: rgba(255, 255, 255, 0.3);
+  padding-left: 16px;
+}
+.signup__section {
+  display: flex;
+  align-items: center;
+}
+.signup__button {
+  height: 50px;
+  width: 200px;
+  background-color: var(--blue-color);
+  color: rgba(255, 255, 255, 1);
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.6;
+  letter-spacing: 0.06em;
+  position: absolute;
+  border-radius: 4px;
+  border: none;
+  align-items: baseline;
+  transition-property: transform;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  margin-left: 12px;
+  margin-top: 20px;
+  padding-left: 28px;
+  cursor: pointer;
+}
+.signup__icon {
+  fill: rgba(255, 255, 255, 1);
+  margin-left: 20px;
+  position: relative;
+  top: 7px;
+}
+.signup__input:focus-within {
+  color: rgba(255, 255, 255, 1);
+}
+
 /*PORTFOLIO*/
-.button-portfolio {
+.button__list-item {
   color: var(--brand-black);
   font-size: 16px;
   font-weight: 500;
@@ -539,7 +550,7 @@ header {
   padding: 5px 24px 5px 24px;
   font-family: inherit;
 }
-.buttons-list {
+.button__list {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
@@ -548,9 +559,9 @@ header {
   margin: 0 auto 34px auto;
 }
 
-.button-portfolio:focus,
-.button-portfolio:active,
-.button-portfolio:hover {
+.button__list-item:focus,
+.button__list-item:active,
+.button__list-item:hover {
   background: var(--blue-color);
   color: #ffffff;
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
@@ -571,10 +582,10 @@ header {
   row-gap: 30px;
 }
 
-.images__item:hover .images__overlay {
+.images__list-item:hover .images__overlay {
   transform: translatey(-100%);
 }
-.images__item {
+.images__list-item {
   border: 1px solid #eeeeee;
   background-color: white;
   padding-right: 0px;
@@ -583,9 +594,9 @@ header {
   position: relative;
   overflow: hidden;
 }
-.images__item:hover,
-.images__item:focus,
-.images__item:active {
+.images__list-item:hover,
+.images__list-item:focus,
+.images__list-item:active {
   cursor: pointer;
   box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.06);
