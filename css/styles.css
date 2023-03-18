@@ -467,9 +467,9 @@ header {
 .footer__box-address {
   display: block;
 }
-.footer__list-icons:hover,
-.footer__list-icons:focus,
-.footer__list-icons:active {
+.footer__item-icons:hover,
+.footer__item-icons:focus,
+.footer__item-icons:active {
   background-color: var(--blue-color);
   cursor: pointer;
   fill: var(--white-color);
@@ -479,7 +479,7 @@ header {
 
   /* Footer - SIGN UP   */
   .footer__signup {
-    margin-left: 70px;
+    margin-left: 90px;
     margin-top: 30px;
     position: relative;
   }
