@@ -296,7 +296,7 @@ header {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .social-icons > li,
-.social-icons-footer > li {
+.footer__social-icons > li {
   padding: 12px 12px;
   border-radius: 50%;
 }
@@ -681,7 +681,7 @@ input:focus {
   color: var(--blue-color);
 }
 
-.submit {
+.form__submit {
   margin-top: 30px;
   padding: 10px 52px;
   margin-left: auto;
