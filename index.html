@@ -533,10 +533,63 @@
     </div>
       </div>
     </footer>
+
+    <!--MODAL FORM-->
+
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
-        <button type="button" class="close-btn" data-modal-close> X </button></div>
+        <button type="button" class="close-btn" data-modal-close> X </button>
+        
+        <form class="modal__form">
+          <p class="form__text">Zostaw swoje dane w formularzu poniżej</p>
+          <div class="form__field">
+            <label class="form__label" for="name">Imię</label>
+            <div class="modal-icone-cover">
+              <input class="form__input" type="text" name="user-name" id="name" />
+              <svg class="form__icone">
+                <use href="./images/icons.svg#icon-person"></use>
+              </svg>
+            </div>
+          </div>
+    
+          <div class="form__field">
+            <label class="form__label" for="tel">Тelefon</label>
+            <div class="modal-icone-cover">
+              <input class="form__input" type="tel" name="tel" id="tel">
+              <svg class="form__icone">
+                <use href="./images/icons.svg#icon-phone"></use>
+    
+              </svg>
+            </div>
+          </div>
+
+          <div class="form__field">
+            <label class="form__label" for="email">Email</label>
+            <div class="modal-icone-cover">
+              <input class="form__input" type="email" name="email" id="email">
+              <svg class="form__icone">
+                <use href="./images/icons.svg#icon-email"></use>
+              </svg>
+            </div>
+          </div>
+
+          <div class="form__field">
+            <label class="form__label" for="comment">Кomentarz</label>
+            <textarea class="form__comment" name="comment" id="comment" rows="10" placeholder="Wprowadź tekst"></textarea>
+          </div>
+
+          <label class="form__checkbox-label">
+            <input class="form__checkbox" type="checkbox" name="policy">
+            <span class="form__checkbox-icon"></span>
+            Oświadczam, iż akceptuję <a href="" class="form__policy-link">Regulamin</a> i <a href="" class="form__policy-link"> Politykę Prywatności</a>
+          </label>
+    
+          <button class="submit" type="submit">Wyślij</button>
+    
+        </form>
+      </div>
+      </div>
   </div>
-    <script src="./modal.js"></script>
-  </body>
+  <script src="./modal.js"></script>
+</body>
 </html>
