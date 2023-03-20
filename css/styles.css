@@ -549,7 +549,7 @@ header {
 .modal__form {
   padding: 40px;
 }
-.form__text {
+.form__title {
   padding-bottom: 12px;
   font-family: "Roboto";
   font-weight: 700;
@@ -570,9 +570,13 @@ header {
   margin-top: 0;
 }
 
-.policy-check {
-  margin-top: 20px;
-  margin-bottom: 30px;
+.form__label {
+  margin-bottom: 4px;
+  font-family: "Roboto";
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
+  color: var(--brand-color);
 }
 
 .form__input {
@@ -591,15 +595,15 @@ input:focus {
   border: 1px solid var(--blue-color);
 }
 
-.form__input:focus ~ .form__icone {
+.form__input:focus + .form__icon {
   fill: var(--blue-color);
 }
 
-/*.modal-icone-cover {
+.form__icon-position {
   position: relative;
-}*/
+}
 
-.form__icone {
+.form__icon {
   position: absolute;
   top: 50%;
   left: 12px;
@@ -632,15 +636,6 @@ input:focus {
   line-height: 1.16;
   letter-spacing: 0.01em;
   padding-right: 40px;
-}
-
-.form__label {
-  margin-bottom: 4px;
-  font-family: "Roboto";
-  font-size: 12px;
-  line-height: 1.16;
-  letter-spacing: 0.01em;
-  color: var(--brand-color);
 }
 
 .form__checkbox {
@@ -676,9 +671,7 @@ input:focus {
 
 .form__checkbox:checked + .form__checkbox-icon {
   border-color: var(--blue-color);
-  background-image: url(../images/iconcheck.svg);
-  background-size: contain;
-  background-origin: border-box;
+  background-color: var(--blue-color);
 }
 
 .form__policy-link {
@@ -686,7 +679,7 @@ input:focus {
   color: var(--blue-color);
 }
 
-.form__submit {
+.form__button {
   margin-top: 30px;
   padding: 10px 52px;
   margin-left: auto;
