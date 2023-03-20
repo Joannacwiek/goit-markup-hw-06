@@ -670,8 +670,10 @@ input:focus {
 }
 
 .form__checkbox:checked + .form__checkbox-icon {
+  background-size: contain;
+  background-origin: border-box;
   border-color: var(--blue-color);
-  background-color: var(--blue-color);
+  background-image: url("../images/iconcheck.svg");
 }
 
 .form__policy-link {
