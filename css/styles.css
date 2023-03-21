@@ -674,7 +674,7 @@ input:focus {
   background-size: contain;
   background-origin: border-box;
   border-color: var(--blue-color);
-  background-image: url("../images/iconcheck.svg");
+  background-image: url(../images/icon-check.svg);
 }
 
 .form__policy-link {
