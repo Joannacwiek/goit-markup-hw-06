@@ -359,14 +359,14 @@ header {
   fill: #afb1b8;
   margin: 16px 32px;
 }
-/*.clients__icon-class:hover,
+.clients__icon-class:hover,
 .clients__icon-class:focus,
 .clients__icon-class:active {
   fill: var(--blue-color);
   transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}*/
+}
 
 /*FOOTER*/
 .footer__container {
